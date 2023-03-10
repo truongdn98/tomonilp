@@ -1,0 +1,363 @@
+@charset "UTF-8";
+
+/*---------------------------------------------------------------*\
+	/news/
+\*---------------------------------------------------------------*/
+main .page_wrap {
+    max-width: var(--container-width);
+    margin: 6rem auto 15rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .page_wrap > .inner {
+    width: 67%;
+}
+
+main .page_wrap > .inner .entries {
+}
+
+main .page_wrap > .inner .entries li {
+    margin-bottom: 3rem;
+}
+
+main .page_wrap > .inner .entries li a {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 1rem;
+}
+
+main .page_wrap > .inner .entries li a figure {
+    width: 24%;
+    margin: 0;
+    position: relative;
+}
+
+main .page_wrap > .inner .entries li a figure .date {
+    background: var(--secondary-main-color);
+    color: #fff;
+    font-weight: 500;
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    padding: 7px 10px 10px;
+    line-height: 1em;
+}
+
+main .page_wrap > .inner .entries li a figure .date span {
+    font-size: 1rem;
+    line-height: 5px;
+}
+
+main .page_wrap > .inner .entries li a figure img {
+    height: 150px;
+    object-fit: cover;
+}
+
+main .page_wrap > .inner .entries li a .exp {
+    width: 73%;
+}
+
+main .page_wrap > .inner .entries li a .exp .meta {
+    font-size: 1.2rem;
+    color: #10224b;
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+main .page_wrap > .inner .entries li a .exp h2 {
+    font-size: 1.8rem;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 1rem;
+}
+
+main .page_wrap > .inner .entries li a .exp .excerpt {
+    font-size: 1.1rem;
+    color: #888888;
+    font-weight: 600;
+    line-height: 2.1rem;
+    letter-spacing: 1px;
+}
+
+main .page_wrap > .sidebar {
+    width: 28%;
+}
+
+main .page_wrap > .sidebar section {
+    margin-bottom: 3rem;
+}
+
+main .page_wrap > .sidebar section h3 {
+    color: #111111;
+    text-align: center;
+    padding: 1rem 0 2rem;
+    font-size: 1.4rem;
+    letter-spacing: 3px;
+    font-family: var(--font-helvetica);
+    font-weight: 700;
+    font-style: italic;
+    border-bottom: 1px solid #111111;
+    margin-bottom: 2rem;
+}
+
+main .page_wrap > .sidebar section:first-child h3 {
+    padding-top: 0;
+}
+
+main .page_wrap > .sidebar section .links a {
+    font-size: 1.1rem;
+    font-weight: 700;
+    padding: 15px 0px;
+    display: block;
+    border-bottom: 1px solid rgba(147, 147, 147, .5);
+    position: relative;
+    color: var(--secondary-main-color);
+}
+
+
+main .page_wrap > .sidebar .archives {
+}
+
+main .page_wrap > .sidebar .archives .year {
+    margin-bottom: 1rem;
+    cursor: pointer;
+}
+
+main .page_wrap > .sidebar .archives .open .open_month:after {
+    transform: rotate(90deg);
+
+}
+
+main .page_wrap > .sidebar .archives .monthes {
+    display: none;
+}
+
+main .page_wrap > .sidebar .archives .monthes a {
+    font-size: 1.2rem;
+    padding: 8px 5px 8px 12px;
+    border-bottom: none;
+    font-weight: 400;
+    letter-spacing: 0;
+}
+
+main .page_wrap > .sidebar section .links .monthes a:after {
+    left: 0;
+    width: 5px;
+    height: 9px;
+    background-size: contain;
+}
+
+main .page_wrap > .sidebar .search_form {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .page_wrap > .sidebar .search_form .search_box {
+    font-size: 1.5rem;
+    background: #eee;
+    width: 90%;
+    border: none;
+    padding: 1rem;
+}
+
+main .page_wrap > .sidebar .search_form .search_btn {
+    font-size: 0;
+    background-color: var(--secondary-main-color);
+    background-image: url(../img/news/search.png);
+    background-size: 46%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 2rem;
+    border: 0;
+}
+
+.wp-pagenavi {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.wp-pagenavi span,
+.wp-pagenavi a {
+    display: inline-block;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    margin: 0 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 6px 12px;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+    color: var(--main-color);
+    font-weight: 700;
+}
+
+.wp-pagenavi .current {
+    background: var(--secondary-main-color);
+    text-align: center;
+    padding: 6px 12px;
+    color: #fff;
+    border-radius: 100px;
+    width: 30px;
+    height: 30px;
+}
+
+/* 記事詳細 */
+#detail {
+}
+
+#detail .meta {
+    display: flex;
+    /* margin-bottom: 2rem; */
+    margin-bottom: 5px;
+}
+
+#detail .meta .date {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+#detail .meta .cat {
+    font-size: 1.25rem;
+    margin-left: 1rem;
+}
+
+#detail .title {
+    font-size: 2.5rem;
+    font-weight: 800;
+    margin-bottom: 2rem;
+}
+
+#detail .content {
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 5rem;
+}
+
+#detail .content img {
+    height: auto;
+}
+
+#detail .content p {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 2.1em;
+    margin-bottom: 1.5rem;
+}
+
+#detail .content h3 {
+    color: var(--main-color);
+    font-size: 2.05rem;
+    border-left: 2px solid var(--main-color);
+    padding-left: 2rem;
+    font-weight: 700;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+#detail .content h4 {
+    font-size: 1.65rem;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 1rem;
+    margin-bottom: 1.5rem;
+    margin-top: 3rem;
+}
+
+#detail .share {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5rem 0;
+}
+
+#detail .share h4 {
+    color: var(--main-color);
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin-right: 2rem;
+}
+
+#detail .share .btns a {
+    color: var(--main-color);
+    margin: 0 15px;
+}
+
+#detail .share .btns a i {
+    font-size: 2rem;
+}
+
+#detail .style_button {
+    max-width: 330px;
+    margin: 0 auto;
+}
+
+#detail .style_button a span.style_arrow {
+    transform: rotate(180deg);
+    left: 12px;
+    right: auto;
+}
+
+#relates {
+    margin-top: 6rem;
+}
+
+/*---------------------------------------------------------------*\
+	$736px
+\*---------------------------------------------------------------*/
+@media screen and (max-width: 736px) {
+    main .page_wrap {
+        flex-direction: column;
+        margin: 2rem auto 4rem;
+        width: 90%;
+    }
+
+    main .page_wrap > .inner .entries li {
+        margin-bottom: 1rem;
+    }
+
+    main .page_wrap > .inner .entries li a {
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    main .page_wrap > .inner .entries li a figure {
+        width: 30%;
+    }
+
+    main .page_wrap > .inner .entries li a .exp {
+        width: 66%;
+    }
+
+    main .page_wrap > .inner .entries li a .excerpt {
+        font-size: 1.1rem;
+        color: #888888;
+        letter-spacing: 0;
+        margin-top: 1rem;
+    }
+
+    main .page_wrap > .inner {
+        width: 100%;
+        margin-bottom: 6rem;
+    }
+
+    main .page_wrap > .inner .entries li a .exp h2 {
+        font-size: 1.4rem;
+        margin-bottom: 0;
+    }
+
+    main .page_wrap > .inner .entries li a .exp .meta {
+        margin-bottom: 5px;
+    }
+
+    main .page_wrap > .sidebar {
+        width: 100%;
+    }
+
+    #detail .title {
+        font-size: 2rem;
+    }
+}
